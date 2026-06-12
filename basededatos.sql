@@ -150,3 +150,9 @@ FROM productos p
 INNER JOIN categorias c ON p.categoria_id = c.id
 GROUP BY c.nombre_categoria;
 
+<?php
+// Configuración de las credenciales de la base de datos
+$host = "localhost";
+$db_name = "sistema_inventario";
+$username = "root";
+$password = ""; // Vacío por defecto en XAMPPgi
