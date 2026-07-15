@@ -30,8 +30,6 @@ $result = $stmt->get_result();
 
 // 8. Verificar si encontramos un usuario registrado con ese nombre
 
-Instituto Nacional de Ciudad Barrios
-Bachillerato en Desarrollo de Software - Allan Romero
 
 if ($result->num_rows === 1) {
 
@@ -65,8 +63,6 @@ exit();
 // Cerrar la sentencia de forma ordenada
 $stmt->close();
 
-Instituto Nacional de Ciudad Barrios
-Bachillerato en Desarrollo de Software - Allan Romero
 
 } catch (mysqli_sql_exception $e) {
 // Detener el script si hay un fallo crítico de SQL
