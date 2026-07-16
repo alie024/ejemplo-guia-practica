@@ -29,9 +29,6 @@ $stmt->bind_param("siid", $nombre_producto, $categoria_id, $stock, $precio);
 
 // 5. Ejecutar la inserción
 
-Instituto Nacional de Ciudad Barrios
-Bachillerato en Desarrollo de Software - Allan Romero
-
 $stmt->execute();
 
 // 6. Cerrar la sentencia

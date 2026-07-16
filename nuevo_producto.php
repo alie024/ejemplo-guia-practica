@@ -58,8 +58,6 @@ $sql_cat = "SELECT id, nombre_categoria FROM categorias ORDER BY
 nombre_categoria ASC";
 $res_cat = $conn->query($sql_cat);
 
-Instituto Nacional de Ciudad Barrios
-Bachillerato en Desarrollo de Software - Allan Romero
 
 // Dibujar las opciones
 while($cat = $res_cat->fetch_assoc()) {

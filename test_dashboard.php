@@ -13,9 +13,6 @@ exit();
 <!DOCTYPE html>
 <html lang="es">
 
-Instituto Nacional de Ciudad Barrios
-Bachillerato en Desarrollo de Software - Allan Romero
-
 <head>
 <meta charset="UTF-8">
 <title>Panel de Control - Acceso Autorizado</title>
