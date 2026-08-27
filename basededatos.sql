@@ -150,3 +150,33 @@ FROM productos p
 INNER JOIN categorias c ON p.categoria_id = c.id
 GROUP BY c.nombre_categoria;
 
+
+
+
+
+
+
+
+MÓDULO DE COMPRAS: ARQUITECTURA MAESTRO-DETALLE (Guía 23)
+-- =================================================================
+CREATE TABLE compras (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    proveedor_id INT NOT NULL,
+    usuario_id INT NOT NULL,
+    fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
+    total DECIMAL(10,2) NOT NULL,
+
+    FOREIGN KEY (proveedor_id) REFERENCES proveedores(id_proveedor),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+CREATE TABLE detalle_compras (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    compra_id INT NOT NULL,
+    producto_id INT NOT NULL,
+    cantidad INT NOT NULL,
+    precio_compra DECIMAL(10,2) NOT NULL,
+
+    FOREIGN KEY (compra_id) REFERENCES compras(id),
+    FOREIGN KEY (producto_id) REFERENCES productos(id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
