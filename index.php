@@ -19,8 +19,6 @@ sizing: border-box; }
 button { width: 100%; padding: 10px; background-color: #1e3a8a; color: white; border:
 none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px; }
 
-Instituto Nacional de Ciudad Barrios
-Bachillerato en Desarrollo de Software - Allan Romero
 
 button:hover { background-color: #1d4ed8; }
 .error { color: #dc2626; text-align: center; font-size: 14px; margin-bottom: 10px; }

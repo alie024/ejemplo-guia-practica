@@ -23,8 +23,6 @@ radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
 label { display: block; margin-bottom: 5px; font-weight: bold; color: #334155; }
 input, select { width: 100%; padding: 10px; border: 1px solid #cbd5e1; border-radius: 5px;
 
-Instituto Nacional de Ciudad Barrios
-Bachillerato en Desarrollo de Software - Allan Romero
 
 box-sizing: border-box; }
 button { width: 100%; padding: 10px; background-color: #10b981; color: white; border:
