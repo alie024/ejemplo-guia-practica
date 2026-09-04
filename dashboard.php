@@ -114,7 +114,8 @@ Proveedores</a>
 <a href="#" class="modulo" style="background:#64748b;">🛒Punto de Venta
 (Próximamente)</a>
 </div>
-
+HTML
+<a href="historial_compras.php" class="modulo">Historial de Compras</a>
 
 </body>
 </html>
