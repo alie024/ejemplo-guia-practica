@@ -43,6 +43,7 @@ th { background-color: #1e293b; color: #ffffff; }
 </div>
 <table>
 <thead>
+<th>Acciones<th>
 <tr>
 <th>Numero</th>
 <th>Fecha y Hora</th>
@@ -51,7 +52,13 @@ th { background-color: #1e293b; color: #ffffff; }
 <th>Total Invertido</th>
 </tr>
 </thead>
+</td>
 <tbody>
+    <td>
+<a href="detalle_compra.php?id=<?php echo $fila['numero_factura']; ?>" style="background:
+#2563eb; color: white; padding: 6px 12px; text-decoration: none; border-radius: 4px; font-size:
+13px; font-weight: bold;">Ver Detalle</a>
+</td>
 <?php
 if ($resultado->num_rows > 0) {
 while($fila = $resultado->fetch_assoc()) {
